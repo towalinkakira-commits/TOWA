@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHENZHEN TOWA LINK | 東和匠鏈 - 日本品質・図面対応・技術商社の最適解</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root { 
+            --navy: #002060; 
+            --navy-light: #003399;
+            --orange: #FF6B00; 
+            --industrial-gray: #f2f4f7;
+        }
+        
+        body { font-family: 'Noto Sans JP', sans-serif; color: #1a1a1a; scroll-behavior: smooth; overflow-x: hidden; line-height: 1.8; }
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        
+        /* 视觉增强 */
+        .glass-header { background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .hero-gradient { background: linear-gradient(135deg, rgba(0,32,96,1) 0%, rgba(0,15,45,0.95) 100%); }
+        .bg-navy-dark { background-color: #00153a; }
+        
+        /* 转化强化：悬浮联系按钮 */
+        .floating-cta { position: fixed; right: 20px; bottom: 20px; z-index: 100; }
+        
+        /* 动效与装饰 */
+        .hover-lift { transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .hover-lift:hover { transform: translateY(-10px); box-shadow: 0 30px 60px rgba(0,32,96,0.12); }
+        .orange-line::after { content: ''; display: block; width: 60px; height: 4px; background: var(--orange); margin-top: 15px; }
+        .orange-line-center::after { content: ''; display: block; width: 60px; height: 4px; background: var(--orange); margin: 15px auto; }
+        
+        /* 表格样式 */
+        .spec-table th { background-color: #f8fafc; color: var(--navy); font-size: 0.75rem; border-bottom: 2px solid #e2e8f0; }
+        .spec-table td { font-size: 0.75rem; border-bottom: 1px solid #f1f5f9; }
+
+        @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        .animate-pulse-soft { animation: pulse-soft 2s infinite; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <header class="fixed w-full z-50 glass-header">
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="h-12 w-12 bg-[#002060] flex items-center justify-center rounded-sm">
+                        <span class="text-white font-black text-xl italic">T</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-black tracking-tighter text-[#002060] leading-none uppercase italic">SHENZHEN TOWA LINK</h1>
+                        <p class="text-[10px] font-bold text-orange-600 mt-1">日本市場特化型・技術商社 | 東和匠鏈</p>
+                    </div>
+                </div>
+
+                <nav class="hidden xl:flex items-center space-x-10 text-[13px] font-bold">
+                    <a href="#about" class="text-gray-700 hover:text-orange-500 transition">強みと信念</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-orange-500 transition">お悩み解決</a>
+                    <a href="#products" class="text-gray-700 hover:text-orange-500 transition">取扱製品</a>
+                    <a href="#flow" class="text-gray-700 hover:text-orange-500 transition">取引の流れ</a>
+                    <a href="#quality" class="text-gray-700 hover:text-orange-500 transition">品質管理</a>
+                    <a href="#contact" class="bg-[#002060] text-white px-6 py-2 rounded-sm hover:bg-orange-600 transition-all shadow-lg">見積依頼 / お問い合わせ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-30" alt="Factory Image">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="container mx-auto px-4 lg:px-10 relative z-10 text-white">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center space-x-3 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-8 border border-white/20">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                    </span>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-orange-400">図面があれば、最短当日回答いたします</span>
+                </div>
+                
+                <h2 class="text-4xl md:text-7xl font-black leading-[1.1] mb-8 font-oswald tracking-tight italic">
+                    QUALITY WITHOUT <br><span class="text-orange-500">COMPROMISE.</span>
+                </h2>
+                
+                <p class="text-lg md:text-2xl text-white mb-6 leading-relaxed font-bold border-l-4 border-orange-500 pl-6">
+                    日本基準に準拠した品質と、安定した供給体制をご提供します。<br>
+                    品質・納期・対応のすべてにおいて、日本企業様に「安心」をお届けします。
+                </p>
+                <p class="text-blue-200 text-sm md:text-base mb-10 max-w-2xl font-medium">
+                    JIS規格の厳格な順守、図面行間の意図解釈、そして迅速なレスポンス。<br>
+                    日中間のギャップを埋め、貴社の調達部門の延長として機能する技術商社です。
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="px-12 py-5 bg-orange-600 text-white font-black text-lg hover:bg-white hover:text-[#002060] transition-all shadow-2xl flex items-center">
+                        <i class="fa-solid fa-file-invoice mr-3"></i> 無料見積を依頼する
+                    </a>
+                    <a href="#products" class="px-12 py-5 border-2 border-white/30 text-white font-black text-lg hover:bg-white/10 transition-all">
+                        取扱製品カテゴリ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-20 items-start">
+                <div class="relative">
+                    <div class="aspect-square bg-gray-100 rounded-sm overflow-hidden shadow-2xl">
+                         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover grayscale-[0.5]" alt="Tech Representative">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-[#002060] text-white p-8 max-w-xs shadow-2xl">
+                        <p class="text-xs font-bold text-orange-400 mb-2 uppercase tracking-widest">Representative Message</p>
+                        <p class="text-sm font-bold leading-relaxed italic">「図面の先にある、現場の使い勝手まで責任を持つ。それが私たちの誇りです。」</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-sm font-black text-orange-500 tracking-[0.3em] uppercase mb-4">Corporate Philosophy</h3>
+                    <h2 class="text-3xl md:text-4xl font-black text-[#002060] mb-10 leading-tight">日本市場に特化した<br>「調達の最適解」を。</h2>
+                    
+                    <div class="space-y-6 text-gray-700 font-medium leading-loose">
+                        <p>
+                            当社は、日本の工業分野における商習慣・品質基準・技術要求への理解を基盤に、長期的に日本市場に向けた調達業務に取り組んでまいりました。単なる製品供給ではなく、図面の読解、仕様の意図把握、さらには現場で求められる実用性までを踏まえた対応を重視しております。
+                        </p>
+                        
+                        <div class="mt-10 p-8 border-l-8 border-orange-500 bg-gray-50 shadow-sm">
+                            <p class="text-sm text-gray-800 leading-loose font-bold">
+                                当社は、代表自らが日本企業との取引実務を通じて培った経験をもとに設立されました。<br>
+                                日本独自の細やかな品質要求や納期管理を深く理解し、単なる右から左への貿易ではなく、図面の意図まで踏み込んだ技術的な橋渡しを徹底しております。
+                            </p>
+                        </div>
+                        
+                        <p class="pt-6">
+                            日中間における品質認識の違いを十分に理解した上で、そのギャップを埋める役割を担うことを当社の重要な使命と考えています。お客様の要求を正確に理解し、安心して継続的にご依頼いただけるパートナーであり続けることを目指しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-24 bg-gray-50 border-y border-gray-100">
+        <div class="container mx-auto px-4 lg:px-10 text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-[#002060] orange-line-center mb-6">調達における「5つの悩み」を解決</h2>
+            <p class="text-gray-500 font-bold italic">貴社の調達コストとリスクを、確かな技術力で最小化します。</p>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-10 hover-lift border border-transparent hover:border-orange-500 transition-all group">
+                    <div class="text-4xl text-gray-200 group-hover:text-orange-500 mb-6 transition-colors">01</div>
+                    <h4 class="text-xl font-black text-[#002060] mb-4 flex items-center">
+                        <i class="fa-solid fa-hand-holding-dollar mr-3"></i> コストダウン
+                    </h4>
+                    <p class="text-sm text-gray-500 font-bold mb-6">日本国内での製造では予算が合わない、または原材料高騰により利益が圧迫されている。</p>
+                    <p class="text-xs text-[#002060] leading-loose font-black bg-blue-50 p-4 rounded">
+                        【解決策】中国国内の有力工場とダイレクトに連携。中間マージンをカットし、日本品質を維持したまま、コストメリットをご提案いたします。
+                    </p>
+                </div>
+                <div class="bg-white p-10 hover-lift border border-transparent hover:border-orange-500 transition-all group">
+                    <div class="text-4xl text-gray-200 group-hover:text-orange-500 mb-6 transition-colors">02</div>
+                    <h4 class="text-xl font-black text-[#002060] mb-4 flex items-center">
+                        <i class="fa-solid fa-clock mr-3"></i> 短納期対応
+                    </h4>
+                    <p class="text-sm text-gray-500 font-bold mb-6">国内メーカーの納期が数ヶ月待ちで、プロジェクトの稼働に間に合わない。</p>
+                    <p class="text-xs text-[#002060] leading-loose font-black bg-blue-50 p-4 rounded">
+                        【解決策】材料在庫を豊富に持つサプライヤーを厳選。航空便を含む最適な物流網により、緊急案件にも可能な限り対応いたします。
+                    </p>
+                </div>
+                <div class="bg-white p-10 hover-lift border border-transparent hover:border-orange-500 transition-all group">
+                    <div class="text-4xl text-gray-200 group-hover:text-orange-500 mb-6 transition-colors">03</div>
+                    <h4 class="text-xl font-black text-[#002060] mb-4 flex items-center">
+                        <i class="fa-solid fa-gears mr-3"></i> 図面品・特注対応
+                    </h4>
+                    <p class="text-sm text-gray-500 font-bold mb-6">規格外のサイズや、特殊な材質を指定したいが、対応可能な製作先が見つからない。</p>
+                    <p class="text-xs text-[#002060] leading-loose font-black bg-blue-50 p-4 rounded">
+                        【解決策】幾何公差や表面粗さなど、図面の意図を熟知したエンジニアが工程を設計。一品モノの試作から量産まで、図面通りに製作いたします。
+                    </p>
+                </div>
+                <div class="bg-white p-10 hover-lift border border-transparent hover:border-orange-500 transition-all group">
+                    <div class="text-4xl text-gray-200 group-hover:text-orange-500 mb-6 transition-colors">04</div>
+                    <h4 class="text-xl font-black text-[#002060] mb-4 flex items-center">
+                        <i class="fa-solid fa-boxes-stacked mr-3"></i> 安定供給・継続性
+                    </h4>
+                    <p class="text-sm text-gray-500 font-bold mb-6">海外調達はトラブルが多く、供給が途絶えるリスクが不安である。</p>
+                    <p class="text-xs text-[#002060] leading-loose font-black bg-blue-50 p-4 rounded">
+                        【解決策】複数の製造拠点によるバックアップ体制と、弊社の厳格な進捗管理により、安定的なリピート注文・分納対応を承ります。
+                    </p>
+                </div>
+                <div class="bg-white p-10 hover-lift border border-transparent hover:border-orange-500 transition-all group">
+                    <div class="text-4xl text-gray-200 group-hover:text-orange-500 mb-6 transition-colors">05</div>
+                    <h4 class="text-xl font-black text-[#002060] mb-4 flex items-center">
+                        <i class="fa-solid fa-shield-halved mr-3"></i> 徹底した品質管理
+                    </h4>
+                    <p class="text-sm text-gray-500 font-bold mb-6">海外製品の品質（寸法精度、バリ、梱包）が信用できない。</p>
+                    <p class="text-xs text-[#002060] leading-loose font-black bg-blue-50 p-4 rounded">
+                        【解決策】全ての出荷品にミルシートと検査成績書を標準付帯。抜き打ち検査ではなく、弊社の全数確認プロセスを経て日本へ送り出します。
+                    </p>
+                </div>
+                <div class="bg-[#002060] p-10 hover-lift text-white flex flex-col justify-center">
+                    <h4 class="text-xl font-black mb-4">図面をお持ちですか？</h4>
+                    <p class="text-sm text-blue-200 mb-6">
+                        お送りいただければ、24時間以内に技術的な実現可能性と概算見積を回答いたします。
+                    </p>
+                    <a href="#contact" class="bg-orange-500 text-center py-4 font-black text-sm hover:bg-white hover:text-[#002060] transition-all">今すぐ図面を送る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-white">
+        <div class="container mx-auto px-4 lg:px-10 text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-black text-[#002060] orange-line-center mb-6 italic italic">PRODUCT LINEUP</h2>
+            <p class="text-gray-500 font-bold">用途・使用環境に応じた材質提案も承ります。</p>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="flex flex-col md:flex-row bg-gray-50 border border-gray-100 group">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+                        <img src="C:\Users\SUNTECH08\Desktop\M资料\T资料\公司需要\官网\Rev１\images" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="SUS Plates">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-orange-500 font-black text-[10px] tracking-widest uppercase">Steel Materials</span>
+                        <h4 class="text-xl font-black text-[#002060] mt-2 mb-4">ステンレス鋼材・厚板</h4>
+                        <p class="text-xs text-gray-500 leading-loose mb-6">
+                            SUS304, 316Lを中心に、二相ステンレスや耐熱鋼も取り扱っております。図面・仕様に応じた最適材の選定も可能です。
+                        </p>
+                        <table class="w-full spec-table text-left mb-6">
+                            <tr><th class="py-2 px-2">主要材質</th><td class="py-2 px-2">SUS304 / 316L / 310S / 二相</td></tr>
+                            <tr><th class="py-2 px-2">加工範囲</th><td class="py-2 px-2">切断、曲げ、穴あけ、HL処理</td></tr>
+                        </table>
+                        <a href="#contact" class="text-[11px] font-black text-orange-600 flex items-center hover:translate-x-2 transition-transform">
+                            在庫確認・見積依頼 <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row bg-gray-50 border border-gray-100 group">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Flanges">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-orange-500 font-black text-[10px] tracking-widest uppercase">Industrial Flanges</span>
+                        <h4 class="text-xl font-black text-[#002060] mt-2 mb-4">フランジ・鍛造部品</h4>
+                        <p class="text-xs text-gray-500 leading-loose mb-6">
+                            JIS規格品はもちろん、3000Aを超える超大型サイズや、複雑な形状の特注鍛造部品にも技術対応いたします。
+                        </p>
+                        <table class="w-full spec-table text-left mb-6">
+                            <tr><th class="py-2 px-2">規格</th><td class="py-2 px-2">JIS / ANSI / DIN / 特注</td></tr>
+                            <tr><th class="py-2 px-2">対応径</th><td class="py-2 px-2">最大 4000mm までの大型鍛造</td></tr>
+                        </table>
+                        <a href="#contact" class="text-[11px] font-black text-orange-600 flex items-center hover:translate-x-2 transition-transform">
+                            大型・特注品の相談をする <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row bg-gray-50 border border-gray-100 group">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Machining Parts">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <span class="text-orange-500 font-black text-[10px] tracking-widest uppercase">Precision Machining</span>
+                        <h4 class="text-xl font-black text-[#002060] mt-2 mb-4">精密旋盤・マシニング加工</h4>
+                        <p class="text-xs text-gray-500 leading-loose mb-6">
+                            ±0.01mmの公差要求にも対応。日本の厳しい品質基準をクリアする精密部品を、コスト効率良くご提案いたします。
+                        </p>
+                        <table class="w-full spec-table text-left mb-6">
+                            <tr><th class="py-2 px-2">設備</th><td class="py-2 px-2">5軸マシニング、CNC旋盤</td></tr>
+                            <tr><th class="py-2 px-2">検査</th><td class="py-2 px-2">三次元測定、粗さ測定完備</td></tr>
+                        </table>
+                        <a href="#contact" class="text-[11px] font-black text-orange-600 flex items-center hover:translate-x-2 transition-transform">
+                            精密図面品の製作相談 <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row bg-gray-900 border border-orange-500 group">
+                    <div class="md:w-1/2 overflow-hidden h-64 md:h-auto relative">
+                        <img src="https://images.unsplash.com/photo-1590674116315-738994a5e3df?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Industrial Consumables">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-white border-2 border-white/30 px-4 py-1 text-xs font-black uppercase">Consumables</span>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h4 class="text-xl font-black text-orange-500 mt-2 mb-4">消耗品・安全資材</h4>
+                        <p class="text-xs text-gray-400 leading-loose mb-6 italic">
+                            現場の安全を守る「フランジカバー」等、工場の継続稼働に欠かせない消耗品を高品質かつ低コストでご提供いたします。
+                        </p>
+                        <ul class="text-[11px] text-white/70 space-y-3 font-bold mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> 耐熱・耐酸フランジカバー</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> 産業用ガスケット・パッキン</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-orange-500 mr-2"></i> 特注サイズ・ロゴ入れ対応可能</li>
+                        </ul>
+                        <a href="#contact" class="bg-orange-600 text-white text-center py-3 block font-black text-xs hover:bg-white hover:text-orange-600 transition-all">
+                            消耗品の一括見積を依頼する
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flow" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-black text-[#002060] orange-line-center mb-6">お取引のステップ</h2>
+                <p class="text-gray-500 font-bold italic">※図面をお送りいただければ、24時間以内に一次回答いたします。</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-white p-6 border-b-4 border-gray-200 hover:border-orange-500 transition-all">
+                    <div class="text-[40px] font-black font-oswald text-gray-100 leading-none mb-4">01</div>
+                    <h5 class="font-black text-sm text-[#002060] mb-3">見積依頼</h5>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-bold italic">CADデータまたはPDFをお送りください。内容を確認し技術的なご回答をいたします。</p>
+                </div>
+                <div class="bg-white p-6 border-b-4 border-gray-200 hover:border-orange-500 transition-all">
+                    <div class="text-[40px] font-black font-oswald text-gray-100 leading-none mb-4">02</div>
+                    <h5 class="font-black text-sm text-[#002060] mb-3">技術・仕様確認</h5>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-bold italic">JIS公差や材質要求、図面上の不明点を徹底的に洗い出し、品質ギャップをゼロにします。</p>
+                </div>
+                <div class="bg-[#002060] p-6 border-b-4 border-orange-500 text-white shadow-xl">
+                    <div class="text-[40px] font-black font-oswald text-white/10 leading-none mb-4">03</div>
+                    <h5 class="font-black text-sm mb-3">御発注・契約</h5>
+                    <p class="text-[10px] text-blue-200 leading-relaxed font-bold italic">日本円決済に対応。商習慣に合わせた契約形態・お支払い条件にて承ります。</p>
+                </div>
+                <div class="bg-white p-6 border-b-4 border-gray-200 hover:border-orange-500 transition-all">
+                    <div class="text-[40px] font-black font-oswald text-gray-100 leading-none mb-4">04</div>
+                    <h5 class="font-black text-sm text-[#002060] mb-3">製造・進捗管理</h5>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-bold italic">現地の製造ラインを弊社エンジニアが常時モニタリング。定期的に進捗レポートを共有します。</p>
+                </div>
+                <div class="bg-white p-6 border-b-4 border-gray-200 hover:border-orange-500 transition-all">
+                    <div class="text-[40px] font-black font-oswald text-gray-100 leading-none mb-4">05</div>
+                    <h5 class="font-black text-sm text-[#002060] mb-3">全数検査・出荷</h5>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-bold italic">工場検査とは別に、弊社独自の出荷前検査を実施。ミルシートを完備して出荷します。</p>
+                </div>
+                <div class="bg-white p-6 border-b-4 border-gray-200 hover:border-orange-500 transition-all">
+                    <div class="text-[40px] font-black font-oswald text-gray-100 leading-none mb-4">06</div>
+                    <h5 class="font-black text-sm text-[#002060] mb-3">納品・検収</h5>
+                    <p class="text-[10px] text-gray-400 leading-relaxed font-bold italic">日本のご指定場所まで配送。関税を含むDDP納品など、柔軟に対応いたします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quality" class="py-24 bg-navy-dark text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 lg:px-10 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-5xl font-black mb-8 orange-line italic">日本の品質、<br>その期待を超えていく。</h2>
+                    <p class="text-blue-100 text-lg font-medium leading-loose mb-10">
+                        私たちは「安かろう悪かろう」を最も嫌います。<br>
+                        日本市場で求められる品質は、単なる数値上の合格ではありません。バリの除去、梱包の丁寧さ、ドキュメントの正確さ。そのすべてが製品の一部であると考えています。
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 bg-white/5 border border-white/10">
+                            <h5 class="text-orange-500 font-black mb-2">JIS規格完全準拠</h5>
+                            <p class="text-[11px] text-gray-400 leading-loose">材料選定から公差基準まで、JIS規格をベースに管理。ミルシートの完全付帯を保証します。</p>
+                        </div>
+                        <div class="p-6 bg-white/5 border border-white/10">
+                            <h5 class="text-orange-500 font-black mb-2">多角的な非破壊検査</h5>
+                            <p class="text-[11px] text-gray-400 leading-loose">要求に応じてPT検査、UT検査、放射線検査など、高度な検査体制を構築いたします。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white text-navy p-1 rounded shadow-2xl">
+                        <div class="bg-gray-50 px-6 py-4 border-b">
+                            <span class="text-[10px] font-black uppercase text-orange-600">Quality Control Protocol</span>
+                            <h4 class="font-black">品質管理プロセスの一環（抜粋）</h4>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full spec-table text-left">
+                                <thead class="bg-gray-100">
+                                    <tr>
+                                        <th class="py-3 px-4">工程</th>
+                                        <th class="py-3 px-4">主要チェック項目</th>
+                                        <th class="py-3 px-4">証跡</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-xs">
+                                    <tr><td class="py-3 px-4 font-bold">受入時</td><td class="py-3 px-4">化学成分、機械的性質、熱処理</td><td class="py-3 px-4 text-orange-600 font-bold">ミルシート</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold">加工中</td><td class="py-3 px-4">主要寸法、幾何公差、ねじ精度</td><td class="py-3 px-4 text-orange-600 font-bold">中間検査票</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold">仕上げ</td><td class="py-3 px-4">バリ処理、表面粗さ、洗浄状態</td><td class="py-3 px-4 text-orange-600 font-bold">外観確認録</td></tr>
+                                    <tr><td class="py-3 px-4 font-bold">梱包前</td><td class="py-3 px-4">個数確認、防錆処理、荷崩防止</td><td class="py-3 px-4 text-orange-600 font-bold">梱包写真</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white relative">
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="max-w-4xl mx-auto bg-[#002060] text-white p-12 md:p-20 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+                
+                <div class="relative z-10 text-center">
+                    <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight italic">
+                        調達の「安心」を、<br><span class="text-orange-500">今すぐ</span>手に入れませんか？
+                    </h2>
+                    <p class="text-blue-100 text-lg mb-12 font-medium">
+                        図面データ（PDF/CAD）をお送りいただければ、24時間以内に技術回答と一次見積を提出いたします。1個からの試作も承ります。
+                    </p>
+                    
+                    <div class="flex flex-col md:flex-row gap-6 justify-center">
+                        <a href="mailto:towalink.akira@gmail.com" class="bg-orange-600 text-white px-10 py-6 font-black text-xl hover:bg-white hover:text-[#002060] transition-all shadow-xl rounded-sm flex items-center justify-center">
+                            <i class="fa-solid fa-envelope-open-text mr-4 text-2xl"></i> メールで図面を送付
+                        </a>
+                        <div class="bg-white/10 backdrop-blur-md p-6 border border-white/20 flex flex-col justify-center">
+                            <p class="text-[10px] uppercase font-black text-orange-400 mb-1">Response Time</p>
+                            <p class="text-xl font-bold italic">24h Response Guaranteed</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-12 text-xs text-blue-200 font-bold">
+                        ※お預かりした図面・情報は、厳重な機密保持体制のもとで管理いたします。必要に応じてNDA（機密保持契約）の締結も可能です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-4 lg:px-10">
+            <div class="grid lg:grid-cols-2 gap-20 mb-20 border-b border-white/5 pb-20">
+                <div>
+                    <h2 class="text-3xl font-black italic mb-6 font-oswald uppercase">SHENZHEN TOWA LINK</h2>
+                    <p class="text-lg font-black text-orange-500 italic mb-8">深圳市東和匠鏈貿易有限公司</p>
+                    <div class="space-y-4 text-xs font-bold text-gray-400">
+                        <p class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-4 text-orange-500"></i>
+                            Room 341, Block B, Building 3, Wuzhou Xintiandi, No. 6038 Longgang Avenue, <br>
+                            Pingnan Community, Longgang Subdistrict, Longgang District, Shenzhen, China
+                        </p>
+                        <p class="flex items-center italic text-white/80">
+                            <i class="fa-solid fa-certificate mt-1 mr-4 text-orange-500"></i>
+                            日本企業様向け特化型供給体制 ・ 全製品ミルシート対応
+                        </p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-10">
+                    <div>
+                        <h5 class="text-sm font-black mb-6 text-white border-l-2 border-orange-500 pl-4">MENU</h5>
+                        <ul class="text-[11px] text-gray-400 space-y-4 font-bold">
+                            <li><a href="#about" class="hover:text-orange-500 transition">経営理念</a></li>
+                            <li><a href="#solutions" class="hover:text-orange-500 transition">お悩み解決</a></li>
+                            <li><a href="#products" class="hover:text-orange-500 transition">取扱製品</a></li>
+                            <li><a href="#flow" class="hover:text-orange-500 transition">取引の流れ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-sm font-black mb-6 text-white border-l-2 border-orange-500 pl-4">RESOURCES</h5>
+                        <ul class="text-[11px] text-gray-400 space-y-4 font-bold">
+                            <li><a href="#" class="hover:text-orange-500 transition">プライバシーポリシー</a></li>
+                            <li><a href="#" class="hover:text-orange-500 transition">特定商取引法に基づく表記</a></li>
+                            <li><a href="#" class="hover:text-orange-500 transition">よくあるご質問</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-[10px] text-gray-600 font-black tracking-[0.4em] uppercase">
+                © 2026 SHENZHEN TOWA LINK Co., Ltd. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-cta hidden md:block">
+        <a href="#contact" class="bg-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl animate-pulse-soft hover:bg-[#002060] transition-all">
+            <i class="fa-solid fa-file-pdf text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+git init
+git add .
+git commit -m "first upload"
